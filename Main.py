@@ -15,7 +15,8 @@ class Main:
     def __init__(self):
         self.core = Core()
         self.query = ""
-        self.searchKey = "8YBQXoDFDGn672pz6V9N0Y2ZFTf6GS5agARpCvr2sXU="
+        #self.searchKey = "**********************************************"
+	#please use your personal key
         self.goal = 0.9
         self.stopWords = ['a', 'able', 'about', 'across', 'after', 'all', 'almost', 'also', 'am', 'among', 'an',
                           'and', 'any', 'are', 'as', 'at', 'be', 'because', 'been', 'but', 'by', 'can', 'cannot',
