@@ -134,7 +134,7 @@ The above are all the ideas and implementations of our project. I think I can br
 
 
 f.  Bing search key:
-    8YBQXoDFDGn672pz6V9N0Y2ZFTf6GS5agARpCvr2sXU=
+    ********************************************
 
 
 g.  Additional information:
