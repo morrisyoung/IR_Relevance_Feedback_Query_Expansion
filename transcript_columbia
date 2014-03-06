@@ -1,0 +1,137 @@
+Transcript of query "columbia"
+
+ROUND 1:
+Query: "columbia", Target precision: "0.9"
+-------------------------------------------------------------------
+Title:    Columbia Sportswear - Official Site
+Summary:  Shop direct from Columbia Sportswear. Buy Columbia jackets, pants, shirts, fleece, shoes, boots & sweaters. Visit our blog, watch videos & meet our athletes.
+URL:      www.columbia.com
+-------------------------------------------------------------------
+Relevant: No
+-------------------------------------------------------------------
+Title:    Columbia University - Official Site
+Summary:  Founded in 1754 as King's College by royal charter, it is the oldest institution of higher learning in the State of New York. Located in New York City and a member of ...
+URL:      www.columbia.edu
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Columbia (name) - Wikipedia, the free encyclopedia
+Summary:  Columbia is a historical and poetic name used for the United States of America and is also the name of its female personification. It has inspired the names of many ...
+URL:      en.wikipedia.org/wiki/Columbia_(name)
+-------------------------------------------------------------------
+Relevant: No
+-------------------------------------------------------------------
+Title:    :: Welcome to the City of Columbia ::
+Summary:  The Columbia City Hall, also known as Old United States Court House and Post Office, was built in 1870.It was listed on the National Register of Historic Places in 1973.
+URL:      columbiasc.net
+-------------------------------------------------------------------
+Relevant: No
+-------------------------------------------------------------------
+Title:    Columbia Sportswear | International > Select a Country
+Summary:  Welcome to the Greater Outdoors. Experience the Columbia Sportswear website specific to your country and language. Learn more about our products and find out where to ...
+URL:      www.columbia.com/on/demandware.store/Sites-Columbia_US-Site/...
+-------------------------------------------------------------------
+Relevant: No
+-------------------------------------------------------------------
+Title:    Columbia, Missouri - Official Site
+Summary:  The City of Columbia Missouri's official web site. Perform business transactions, view services, department information, upcoming meetings and events.
+URL:      www.gocolumbiamo.com
+-------------------------------------------------------------------
+Relevant: No
+-------------------------------------------------------------------
+Title:    Home | Columbia Business School
+Summary:  Columbia Business School brings a global perspective, cutting-edge methodology, and the energy of New York City to its MBA, EMBA, Executive Education, PhD, and MS ...
+URL:      www8.gsb.columbia.edu
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Columbia University - Wikipedia, the free encyclopedia
+Summary:  Columbia University in the City of New York, commonly referred to as Columbia University, is an American private Ivy League research university located in ...
+URL:      en.wikipedia.org/wiki/Columbia_university
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Columbia, California | Historic Gold Rush Town
+Summary:  Come discover Columbia and explore the rich history of this charming California Gold Rush town located in the heart of the Mother Lode off of highway 49.
+URL:      www.visitcolumbiacalifornia.com
+-------------------------------------------------------------------
+Relevant: No
+-------------------------------------------------------------------
+Title:    Columbia | SIPA | School of International and Public Affairs
+Summary:  Columbia SIPA is the world’s most global public policy school. SIPA offers MPA, MIA and PhD degrees focused on the skills and knowledge needed to solve the most ...
+URL:      new.sipa.columbia.edu
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Precision = 0.4
+-------------------------------------------------------------------
+
+
+
+
+
+ROUND 2:
+Query: "columbia university ", Target precision: "0.9"
+-------------------------------------------------------------------
+Title:    Columbia University - Official Site
+Summary:  Founded in 1754 as King's College by royal charter, it is the oldest institution of higher learning in the State of New York. Located in New York City and a member of ...
+URL:      www.columbia.edu
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Columbia University - Wikipedia, the free encyclopedia
+Summary:  Columbia University in the City of New York, commonly referred to as Columbia University, is an American private Ivy League research university located in ...
+URL:      en.wikipedia.org/wiki/Columbia_university
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Admissions | Columbia University in the City of New York
+Summary:  For information on admission to a Columbia school, select the appropriate school from the drop-down menu on the right.
+URL:      www.columbia.edu/content/admissions.html
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Columbia University | Best College | US News
+Summary:  Is Columbia University the best college for you? Find out at US News. See if Columbia University is ranked and get info on admission, tuition, student life, and more.
+URL:      colleges.usnews.rankingsandreviews.com/.../columbia-university-2707
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Columbia College, Columbia University - Official Site
+Summary:  Columbia College is pleased to introduce the new Columbia College Annual Report, which for the first time not only highlights the Columbia College Fund, as in the ...
+URL:      www.college.columbia.edu
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    About Columbia | Columbia University in the City of New York
+Summary:  Columbia is led by President Lee C. Bollinger. The University's governance is directed by the 24-member Board of Trustees and by the University Senate.
+URL:      www.columbia.edu/content/about-columbia.html
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Columbia University | Columbia University School of the Arts
+Summary:  From a one-room classroom with one professor and eight students, Columbia University has grown to include more than 4,000 faculty members and 23,000 students.
+URL:      arts.columbia.edu/columbia-university
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Columbia University's - Times Topics - The New York Times
+Summary:  News about Columbia University. Commentary and archival information about Columbia University from The New York Times.
+URL:      topics.nytimes.com/top/reference/timestopics/organizations/c...
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Employment at Columbia | Columbia University in the City ...
+Summary:  Opportunities at Columbia. Columbia University is committed to attracting, encouraging and retaining a highly qualified workforce to support our mission of excellence ...
+URL:      www.columbia.edu/content/employment-columbia.html
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Title:    Columbia Lions football - Official Site
+Summary:  The Official Online Home of the Columbia Lions, Columbia Athletics, Columbia University, Columbia Lions Official Merchandise, Columbia Lions broadcasting
+URL:      www.gocolumbialions.com
+-------------------------------------------------------------------
+Relevant: Yes
+-------------------------------------------------------------------
+Precision = 1.0, 2 Round used, Program exit.
+-------------------------------------------------------------------
