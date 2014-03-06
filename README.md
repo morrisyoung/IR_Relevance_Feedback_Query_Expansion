@@ -8,23 +8,38 @@ Relevance Feedback & Query Expansion
 
 
 a.  Team members:
+
     Yunao Liu - yl3055
+
     Shuo Yang - sy2515
 
 
 b.  List:
+
     README
+
     Makefile
+
     Main.py
+
     Interface.py
+
     Core.py
+
     Rocchio.py
+
     Vectorization.py
+
     RSVScoring.py
+
     Clear.py
+
     stemming
+
     transcript_columbia
+
     transcript_gates
+
     transcript_snow_leopard
 
 
@@ -32,24 +47,21 @@ c.  How to run:
 ./Makefile 
 
 After running this bash script, you are supposed to enter the initial query terms and the target precision first:
-#################################################
-Please input query
+>Please input query
 >gates
-Please input target precision
+>Please input target precision
 >0.9
-#################################################
 Then a total of 10 query results given by Bing will show out one by one, with "Title", "Summary" and "URL". You are at the same time asked whether this result is relevant or not. You are supposed to input "y/Y" or "n/N" according to your personal judgement about the relevance of this exact query result. You should make a clear and unbiased judgement otherwise there will be something confusing in the following query round, and you will even hardly get what you want from Bing.
-#################################################
-Title:    Gates Corporation
-Summary:  Gates Corporation is Powering Progress™ in the Oil & Gas, Energy, Mining, Marine, Agriculture, Transportation and Automotive Industries.
-URL:      gates.com
-Is this result relevant or not? Please input Y/N
+>Title:    Gates Corporation
+>Summary:  Gates Corporation is Powering Progress™ in the Oil & Gas, Energy, Mining, Marine, Agriculture, Transportation and Automotive Industries.
+>URL:      gates.com
+>Is this result relevant or not? Please input Y/N
 >n
-...
-#################################################
+>...
 
 
 d.  Internal design:
+
 Our project can be majorly divided into two parts: supporting part and core part.
  
 The job of supporting part is to maintain the running logic of the whole project, including receiving user input query, interacting with Bing API, parsing HTML file, analyzing user judgments and processing text into separately words.
@@ -60,7 +72,9 @@ The job of core part will be discussed in detail in the next part.
 
 
 e.  Query-modification method:
+
 Here is the structure of our whole project, with detailed descriptions in each of the modules:
+
 ->Interface:
 It's a self-defined class, used to store the query result returned by Bing, and transferred from Main module to Core module, which will be discussed below. It stores the BOW (bag of word) information for the title, summary and text information of each query result. URL of this query result is also stored in it; and relevance of this query result is stored as a bool variable.
 
@@ -80,15 +94,25 @@ We call this module as Vectorization other than Inverted-index building in which
 Reference Paper:
 Examining and improving the effectiveness of relevance feedback for retrieval of scanned text documents, Adenike M. Lam-Adesina, Gareth J.F. Jones, June 2005
 detailed RSV calculation formula:
+
 	The formula is :
+
 	TF   : term frequency, actually no help in our global environment
+
 	DF   : document frequency
+
 	DFR  : document frequency in relevant documents
+
 	num  : total number of documents
+
 	numR : number of relevant documents
+
 	RW(word) = log( ( (DFR + 0.5) * (num - DF - numR + DFR + 0.5) )
+
 			/ ( (DF - DFR + 0.5) * (numR - DFR + 0.5) ) )
+
 	RSV(word) = RW(word) * DFR
+
 	Then we choose the word (or words) who has the highest RSV to be the next query keyword.
 No more words about this algorithm. We just tested it but finally decided to use the Rocchio algorithm in the program other than this one, because we find that for the given cases, the Rocchio performs better.
 
@@ -103,6 +127,7 @@ f.  Bing search key:
 
 
 g.  Additional information:
+
 I have finished the bi-gram detection algorithm. The reason why I want to use this bi-gram detection algorithm is that, I find sometimes there exists bi-gram which will greatly improve the query precision if the words in it are in the correct order. As described above, when we query the “columbia”, we find that if we only use the Rocchio weight to decide the terms’ positions, then the second round query should be “university columbia”. By manually testing we find that if the new query is “columbia university” in that round, then we only need 2 rounds to achieve precision@10 of 0.9, other than 3 rounds when “university columbia” is used. So we feel that it is necessary to detect such kind of bi-gram.
 
 But the problem is, how many bi-gram should we use? Let’s think of our algorithm. By experiments we find that it is more appropriate to add exact one new query word to the query, leading to a sound, slowly and safely query expansion. We always choose the term with the highest Rocchio vector weight as the new term. In this scenario, we feel that it is with very low possibility that we can find many bi-grams in the query terms. Also, the bi-gram algorithm is only a supplementary to the main Rocchio expansion method (for example, for the “snow leopard”, we can only get the exact query precision by adding another key word about “Apple Mac OS X” or something like that, otherwise the simple bi-gram of “snow leopard” will lead us to unexpactation). We hope to find that bi-gram and wish it can perform better in the new query. But we should at the same time have limited expectation. If we can find a bi-gram, it’s good, and under most circumstances it can always improve the new query result. But if we can’t find one, it’s also no problem. With such an attitude, we decide to only find one most frequent bi-gram among all the bi-grams in the query term. But again, why we use bi-gram, other than 3-gram or gram with more words in it? It’s also due to our limited expectation. You know, there is very little probability that a 3-gram can exist and exactly express what we want to query from search engine. Another thing is that if this 3-gram actually exists, we can also get a bi-gram from it which can also play an important role in talking about what we are thinking. So, we choose to use bi-gram detection.
